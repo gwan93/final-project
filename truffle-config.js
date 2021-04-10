@@ -1,6 +1,7 @@
 require('babel-register');
 require('babel-polyfill');
 
+// Connects to local blockchain hosted on Ganache
 module.exports = {
   networks: {
     development: {

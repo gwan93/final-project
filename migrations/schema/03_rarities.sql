@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS rarities;
+
+CREATE TABLE rarities (
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(255)
+);

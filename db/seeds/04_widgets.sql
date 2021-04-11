@@ -1,0 +1,2 @@
+INSERT INTO widgets (rarity_id, subcategory_id, name, MSRP_cents, for_sale_by_owner, current_sell_price_cents, hash, description)
+VALUES (4, 3, 'Blue Eyes White Dragon', 5000, true, 9999, 'abcdehash', 'A super strong card');

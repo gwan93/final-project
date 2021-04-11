@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS subcategories;
+DROP TABLE IF EXISTS subcategories CASCADE;
 
 CREATE TABLE subcategories (
   id SERIAL PRIMARY KEY NOT NULL,

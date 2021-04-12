@@ -1,13 +1,12 @@
 const express = require("express");
 const path = require('path');
-const app = express();
 const morgan = require('morgan');
 const cookieSession = require('cookie-session');
 const port = 3006;
 
-app.use(morgan('dev'));
 
 const app = express();
+app.use(morgan('dev'));
 app.post("/login", (req, res) => {
     res.send('POSTING to login');
 }) // express

@@ -6,6 +6,10 @@ import Color from '../abis/Color.json';
 import Admin from '../screens/admin';
 import Login from '../screens/login';
 import Home from '../screens/home';
+import Widget from '../screens/widget';
+import WidgetID from '../screens/widget-id';
+import User from '../screens/user';
+import Collections from '../screens/collections';
 
 class App extends Component {
 
@@ -104,7 +108,16 @@ class App extends Component {
 
           <Route path="/login"><Login/> </Route>
 
+          <Route path="/widget" exact><Widget/></Route>
+
+          <Route path="/widget/:id"><WidgetID/></Route>
+
+          <Route path="/user/:id" exact><User/></Route>
+
+          <Route path="/user/:id/collections/:id"><Collections/></Route>
+
           <Route path="/"><Home/></Route>
+
            </Switch>
         
     );
